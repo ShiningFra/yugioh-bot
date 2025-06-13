@@ -2,13 +2,15 @@ import { Telegraf } from 'telegraf';
 import fetch from 'node-fetch';
 import fs from 'fs';
 import path from 'path';
+import dotenv from 'dotenv';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+dotenv.config();
 
 // Remplace par ton token Telegram
-const bot = new Telegraf('7932709021:AAFXJZiE74Nca5LRaYmEYoT_jC8-rXxx1YQ');
+const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.start((ctx) => {
   ctx.reply('Bienvenue ! Envoie-moi le nom d’une carte Yu-Gi-Oh.');
