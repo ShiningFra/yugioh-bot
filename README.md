@@ -8,9 +8,16 @@ Just for cards downloads
  ```
 
   on your cmd/terminal (opened from the cloned folder, indeed ha ha), next run 
+
  ```cmd
  node index.mjs
  ```
+(in the case u want search by card names)
+
+ ```cmd
+ node bot.mjs
+ ```
+(in the case u want get All cards, 10 cards a time, with Previous and Next nav buttons)
 
  Indeed, this won't work without a bot, so take care, bye bye 
 
